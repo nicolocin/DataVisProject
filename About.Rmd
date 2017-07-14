@@ -1,0 +1,54 @@
+---
+title: "About"
+output: html_document
+---
+
+
+## Overview
+
+&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here we visualize data provided by Center of Medicare & Medicaid services, which includes hospital-specific charges more than 3,000 U.S. hospitals that receive Medicare Inpatient Prospective Payment System (IPPS) payments for the top 100 most frequently billed discharges, paid under Medicare based on a rate per discharge using the Diagnosis Related Group (DRG) for Fiscal Year (FY) 2011.  The data and more information can be found [here](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/Inpatient.html). 
+&nbsp;
+&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Both visualizations allow us to compare how charges and payment for the top 100 diagnoses for inpatient Medicare beneficiaries vary geographically.
+
++ The **interactive map** shows the average charges and payments for *all* the top 100 diagnoses for inpatient Medicare patients by state. 
+
++ The **interactive plot** shows the average charges and payments for *each* of the top 100 diagnoses for inpatient Medicare patients by MS-DRG diagnosis. The MDC (Major Diagnostic Category) and the total number of discharges for each diagnosis are presented by the color and size of each bubble.  
+
+ Relevant information, including region, census division and total hospital discharges of each state, is summarized in a data table below the map. 
+
+Relevant information is summarized in the data table below the plot. 
+
+**********************************************************************
+
+&nbsp;
+
+## Description of Variables
+
+&nbsp;
+
++ **Average Covered Charges** - The provider's average charge for services covered by Medicare for all discharges in the DRG. These will vary from hospital to hospital because of differences in hospital charge structures.
+
++ **Average Total Payments** – The average of Medicare payments to the provider for for the Medicare’s share of the DRG, including the DRG amount, teaching, disproportionate share, capital, and outlier payments for all cases. Also included are co-payment and deductible amounts that the patient is responsible for and any additional payments by third parties for coordination of benefits.[^1]
+
++ **Average Medicare Payments** – The average of Medicare payments to the provider of the DRG including the DRG amount, teaching, disproportionate share, capital, and outlier payments for all cases.  *Does not include co-payment and deductible amounts that the patient is responsible for*. [^2] 
+
+&nbsp;
+
++ **MDC (Major Diagnostic Categories)** - MDC are formed by dividing all possible principal diagnoses into 25 mutually exclusive diagnosis areas for the purposes of payment. inpatient stay into groups for the purposes of payment. 
+
++ **MS-DRG (Medical Severity - Diagnosis Related Group)** - MS-DRG is a statistical system of classifying any Medciare inpatient stay into groups for the purposes of reimbursement.  The MS-DRGs are assigned using the principal diagnosis and additional diagnoses, the principal procedure and additional procedures, sex and discharge status.  Over 500 MS-DRG groups are divided into 25 MDC.
+
++ **Total Discharges** - The number of discharges billed by the provider for inpatient hospital services.
+
+https://www.cheatography.com/davidpol/cheat-sheets/major-diagnostic-category-mdc-to-ms-drg-mapping/
+
+**********************************************************************
+
+
+[^1]: The difference between covered charges and total payments is not paid by Medicare or any other entity, including the beneficiary. 
+
+[^2]: Since the difference between total and medicare payments include payments from third parties (e.g. if the beneficiary has other forms of insurance, an insurance company), it implies that it should be slightly higher than the patient’s true out-of-pocket expense.

@@ -1,0 +1,65 @@
+---
+title: "Findings"
+output: html_document
+---
+
+## Findings
+
+&nbsp;
+
+#### By State
+
++ Average covered charges in California, New Jersey and Nevada seem absurdly high. These three have averages above 60K, although the 4th highest state Florida is only at 46K and the national average is around 37K.  
+
++ Maryland has the lowest average covered charge at 13K, lower than the second lowest state West Virginia by around 6K.  However, it ranks 4th in states with the highest Average Medicare Payments at 11,480. 
+
++ For the most part average total and Medicare payments are highly correlated.  West coast and New England are among the highest, while Southern state like Alabama and Arkansas are among the lowest.
+
++ The average difference between Total and Medicare Payments are much higher in Utah, Wyoming and Hawaii.  Does not seem to correlated with cost of living.
+
+&nbsp;
+
+#### By Medical Diagnosis
+
+
++ The most common inpatient diagnoses for Medicare patients are Circulatory system-related conditions (29/100).
+
++ Four most expensive conditions are sepsis, respiratory support, infectious disease operation procedures, each has average charges of over 100K.  There are only 4 infectious & parasitic disease in the top 100, but two are among the most expensive procedures.
+
++ Majority of diagnoses have average Total - Medicare Payments of between 1000 to 2000.
+
++ Musculoskeletal system & Connective Tissue conditions have some of the highest total – medicare payments despite not being the most expensive procedures
+
+&nbsp;
+
+**********************************************************************
+
+## Limitations
+
++ Data is summarized at the provider (hospital) level, so the data is not able to capture the variation between the charges/payments of patients at the same hospital with the same diagnosis. 
+
++ Our analysis does not take into account of differences in cost of living in each state.
+
++ In addition to co-payments and co-insurance that the patient is responsible for, average total – Medicare payments also includes payments by the patient’s other insurance if he/she has any, so it does not reflect the actual out of pocket expense for each patient.
+
++	Providers (Hospital) with less than 10 discharges per diagnosis are excluded from the original data, so hospitals in rural communities are most likely underrepresented.  Alaska, for example, has only 231 discharges that are recorded in the data, but definitely .
+
++ Since some conditions are most common in some states than others, a weighted average or filtering by diagnosis may be more appropriate. 
+
+&nbsp;
+
+**********************************************************************
+
+## Potential things to explore
+
+&nbsp;
+
++ Compare whether some conditions are more common in some states/regions than others.
+
++ The difference between diagnosis with MCC and/or CC (Major Comorbid Conditions and/or Comorbid Conditions) and those without. 
+
++ Difference over time might be helpful (2011 VS 2012 – 2015) to see whether policy changes
+affected charges overtime. 
+
++ Visualize/allow filtering to see information at the hospital referral region and/or city level.
+
